@@ -16,7 +16,6 @@ const Navbar = ({ theme, setTheme }) => {
         src={theme === "dark" ? assets.logo_dark : assets.logo}
         alt="company logo"
         className="w-32 sm:w-40"
-        id="#hero"
       />
       <div
         className={`flex text-gray-700 dark:text-white sm:text-sm ${

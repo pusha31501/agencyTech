@@ -35,6 +35,9 @@ const Footer = ({ theme }) => {
                 <a href="#hero">Home</a>
               </li>
               <li className=" dark:hover:underline">
+                <a href="#about-me">About Me</a>
+              </li>
+              <li className=" dark:hover:underline">
                 <a href="#services">Services</a>
               </li>
               <li className=" dark:hover:underline">
