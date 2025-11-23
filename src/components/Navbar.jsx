@@ -58,13 +58,6 @@ const Navbar = ({ theme, setTheme }) => {
         >
           My Work
         </a>
-        <a
-          href="#contact-us"
-          className="sm:hover:border-b  max-sm:hover:text-gray-300"
-          onClick={() => setSidebarOpen(false)}
-        >
-          Connect with me
-        </a>
       </div>
       <div className="flex items-center gap-2 sm:gap-4">
         <ThemeToggleBtn theme={theme} setTheme={setTheme} />
