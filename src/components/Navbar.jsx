@@ -10,12 +10,13 @@ const Navbar = ({ theme, setTheme }) => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="flex justify-between items-center py-4 px-4 sm:px-12 lg:px-24 xl:px-40 sticky top-0 z-20 backdrop-blur-2xl font-medium bg-white/50 dark:bg-gray-900/70"
+      className="flex justify-between items-center py-4 px-4 sm:px-12 lg:px-24 xl:px-40 sticky top-0 z-20 backdrop-blur-5xl font-medium bg-white/50 dark:bg-gray-900/70"
     >
       <img
         src={theme === "dark" ? assets.logo_dark : assets.logo}
         alt="company logo"
         className="w-32 sm:w-40"
+        id="#hero"
       />
       <div
         className={`flex text-gray-700 dark:text-white sm:text-sm ${
@@ -38,6 +39,13 @@ const Navbar = ({ theme, setTheme }) => {
           Home
         </a>
         <a
+          href="#about-me"
+          className="sm:hover:border-b  max-sm:hover:text-gray-300"
+          onClick={() => setSidebarOpen(false)}
+        >
+          About me
+        </a>
+        <a
           href="#services"
           className="sm:hover:border-b  max-sm:hover:text-gray-300"
           onClick={() => setSidebarOpen(false)}
@@ -45,18 +53,11 @@ const Navbar = ({ theme, setTheme }) => {
           Services
         </a>
         <a
-          href="#our-work"
+          href="#my-work"
           className="sm:hover:border-b  max-sm:hover:text-gray-300"
           onClick={() => setSidebarOpen(false)}
         >
-          Our Work
-        </a>
-        <a
-          href="#contact-us"
-          className="sm:hover:border-b  max-sm:hover:text-gray-300"
-          onClick={() => setSidebarOpen(false)}
-        >
-          Contact Us
+          My Work
         </a>
       </div>
       <div className="flex items-center gap-2 sm:gap-4">

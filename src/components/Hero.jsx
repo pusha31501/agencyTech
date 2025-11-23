@@ -4,58 +4,45 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <div
+    <motion.div
       id="hero"
-      className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl-px-24 text-center w-full overflow-hidden text-gray-700 dark:text-white"
+      className="flex flex-col items-center gap-6 py-10 sm:pt-30 px-4 sm:px-12 lg:px-24 xl-px-24 text-center w-full overflow-hidden text-gray-700 dark:text-white"
     >
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
-        viewport={{ once: true }}
-        className="inline-flex items-center gap-2 border border-gray-300 p-1.5 rounded-full pr-4"
-      >
-        <img src={assets.group_profile} alt="" className="w-20" />
-        <p className="text-xs font-medium">Trusted by 10K people</p>
-      </motion.div>
-      <motion.h1
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
         viewport={{ once: true }}
-        className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl"
+        className="flex flex-col sm:flex-row items-center justify-between max-w-5xl"
       >
-        Turning imagination into{" "}
-        <span className="bg-gradient-to-r from-[#5044e5] to-[#4d8cea] bg-clip-text text-transparent">
-          digital
-        </span>{" "}
-        impact.
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1 }}
-        viewport={{ once: true }}
-        className="text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w=lg pb-3"
-      >
-        Creating meaningful connections and turning big ideas into interactive
-        digital experience
-      </motion.p>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="relative"
-      >
-        <img src={assets.hero_img} alt="" className="w-full max-w-6xl" />
-        <img
-          src={assets.bgImage1}
-          alt=""
-          className="dark:hidden absolute -top-40 -right-40 sm:-top-100 sm:-right-70 -z-1"
+        <div className="flex-1 max-w-xl space-y-2 order-2 sm:order-1">
+          <p className="text-xl">Hi! I'm Sir Paul Laurence</p>
+          <h1 className="text-3xl sm:text-6xl font-bold text-green-800">
+            frontend web developer based in Metro Manila.
+          </h1>
+          <p className="sm:leading-8 text-sm sm:text-lg">
+            I am a frontend developer and Graphic Layout Artist from City of
+            Taguig, Metro Manila with experience in multiple projects.
+          </p>
+        </div>
+        <motion.img
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+          src={assets.image_round}
+          alt="image profile"
+          className="w-[50%] sm:w-[30%] sm:order-1 mb-4"
         />
       </motion.div>
-    </div>
+      <a
+        href="#contact-us"
+        className="text-sm sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
+      >
+        connect with me
+        <img src={assets.arrow_icon} width={14} alt="" />
+      </a>
+    </motion.div>
   );
 };
 

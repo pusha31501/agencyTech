@@ -45,10 +45,11 @@ const ContactUs = () => {
       id="contact-us"
       className="flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 py-20 sm:py-30  text-gray-800 dark:text-white"
     >
-      <Title
-        title="Reach out to us"
-        description="From strategy to execution, we craft digital solutions that move your business forward."
-      />
+      <Title title="Connect with me" description="Get in touch" />
+      <p className="text-center text-sm">
+        Great to hear from you! If you have any question, comments or feedback,
+        please use the form below.{" "}
+      </p>
       <motion.form
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +77,7 @@ const ContactUs = () => {
 
         <div>
           <p htmlFor="email" className="mb-2 text-sm font-medium">
-            Your name
+            Your email
           </p>
           <div className="flex max-w-full p-1 gap-2 border border-gray-300 rounded-md">
             <img src={assets.email_icon} alt="" className="pl-2" />
