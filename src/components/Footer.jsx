@@ -44,7 +44,7 @@ const Footer = ({ theme }) => {
                 <a href="#my-work">My Work</a>
               </li>
               <li className=" dark:hover:underline">
-                <a href="#contact-us">Contact Us</a>
+                <a href="#contact-us">Contact Me</a>
               </li>
             </ul>
           </div>
