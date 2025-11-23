@@ -29,8 +29,8 @@ const Footer = ({ theme }) => {
             From strategy to execution, we craft digital solutions that move
             your business forward.
           </p>
-          <div className="pt-4 text-sm">
-            <ul className="flex gap-6">
+          <div className="pt-4 text-sm ">
+            <ul className="flex gap-3">
               <li className=" dark:hover:underline">
                 <a href="#hero">Home</a>
               </li>
