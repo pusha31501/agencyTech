@@ -44,7 +44,7 @@ const AboutMe = () => {
           <p className="text-center text-sm">
             I am an experienced Frontend Developer and Graphic layout Artist
             with over a decade of professional experience in the field.
-            Throughtout my career, I have the privilege of collaborating with
+            Throughout my career, I have the privilege of collaborating with
             prestigious organization, contributing to their success and growth.
           </p>
           <div className="grid mt-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl ">
