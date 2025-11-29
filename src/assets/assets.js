@@ -49,8 +49,16 @@ import mgplogo from "./mgplogo.jpg";
 import mgpprofile from "./mgpprofile.jpg";
 import ultreumbg from "./ultreumbg.jpg";
 import scenteriabg from "./scenteriabg.jpg";
+import tailwindcssIcon from "./tailwindcss.png";
 
-export const toolsIcons = [vscode, coreldraw, photoshop, illustrator, github];
+export const toolsIcons = [
+  vscode,
+  coreldraw,
+  photoshop,
+  illustrator,
+  tailwindcssIcon,
+  github,
+];
 export const mgpAssets = [mgplogo, mgpprofile];
 
 const assets = {
