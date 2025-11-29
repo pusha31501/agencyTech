@@ -44,10 +44,19 @@ import graphicdesign_icon from "./graphicdesign.svg";
 import branding_icon from "./brandingIcon.svg";
 import socialmedia_icon from "./socialmediaIcon.svg";
 import arrowsite from "./arrowsite.svg";
+import mgpbg from "./mgpbg.jpg";
+import mgplogo from "./mgplogo.jpg";
+import mgpprofile from "./mgpprofile.jpg";
+import ultreumbg from "./ultreumbg.jpg";
+import scenteriabg from "./scenteriabg.jpg";
 
 export const toolsIcons = [vscode, coreldraw, photoshop, illustrator, github];
+export const mgpAssets = [mgplogo, mgpprofile];
 
 const assets = {
+  scenteriabg,
+  ultreumbg,
+  mgpbg,
   arrowsite,
   socialmedia_icon,
   branding_icon,
